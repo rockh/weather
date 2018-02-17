@@ -1,0 +1,10 @@
+<ul class="hour-list">
+  {{#each hourList as |hour|}}
+  <li>
+    <div>{{hour.hourLabel}}</div>
+    <div>{{hour.weather.0.description}}</div>
+    <div>{{hour.main.temp}} °C </div>
+    <div>Wind: {{hour.wind.speed}} m/s</div>
+  </li>
+  {{/each}}
+</ul>

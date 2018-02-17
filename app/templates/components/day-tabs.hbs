@@ -1,0 +1,10 @@
+<ul class="tabs">
+  {{#each days as |day|}}
+    <li {{action "chooseDay" day}} class="{{if (eq selectedDay day.id) 'active'}}">
+      <div name="icon"><img src="https://openweathermap.org/img/w/{{day.icon}}.png"/></div>
+      <div name="weekday">{{day.weekday}}</div>
+      <div name="main">{{day.main}}</div>
+      <div name="min-max">{{day.min}}/{{day.max}}</div>
+    </li>
+  {{/each}}
+</ul>

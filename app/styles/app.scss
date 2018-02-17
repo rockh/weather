@@ -1,0 +1,49 @@
+ul.tabs {
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-bottom: 5px;
+  font-size: 95%;
+  width: 500px;
+  border-bottom: 1px dashed #ccc;
+  text-align: center;
+  li {
+    width: 20%;
+    border-right: 1px dashed #ccc;
+    &:last-child {
+      border-right: none;
+    }
+    &:hover {
+      border-bottom: 3px inset #87cefa;
+      cursor: pointer;
+    }
+    &.active {
+      background-color: #F0F8FF;
+      border-bottom: 3px outset #87cefa;
+    }
+  }
+}
+
+ul.hour-list {
+  list-style-type: none;
+  width: 500px;
+  margin: 0 auto;
+  padding-left: 0;
+  li {
+    line-height: 30px;
+    height: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding: 5px 10px;
+    div {
+      display: inline-block;
+      width: 24%;
+    }
+  }
+}
+
+.weather-main-desc {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
